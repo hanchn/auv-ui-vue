@@ -3,7 +3,7 @@ import path from 'path';
 
 // 定义路径
 const viewsDir = path.resolve('src/views');
-const routerFilePath = path.resolve('src/router/routes.ts');
+const routerFilePath = path.resolve('src/router/routes.js');
 
 // 确保目录存在的工具函数
 const ensureDirectoryExistence = (filePath) => {
