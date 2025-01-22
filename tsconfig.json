@@ -5,9 +5,12 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "Node",
-    "types": ["node"]
+    "module": "ESNext",              // 使用 ES 模块
+    "moduleResolution": "Node",      // 启用 Node.js 模块解析
+    "target": "ESNext",              // 支持现代语法
+    "lib": ["ESNext", "DOM"],        // 包括 import.meta 的类型支持
+    "esModuleInterop": true,         // 兼容 CommonJS 和 ESM
+    "resolveJsonModule": true,       // 支持 JSON 模块
+    "strict": true                   // 启用严格模式
   }
 }
