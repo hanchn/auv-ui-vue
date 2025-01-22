@@ -28,7 +28,7 @@ const generateRoutes = () => {
     if (dir.isDirectory()) {
       const indexVuePath = path.join(viewsDir, dir.name, 'index.vue');
       if (fs.existsSync(indexVuePath)) {
-        const routePath = `/${dir.name}/index.vue`;
+        const routePath = `/${dir.name}`;
         const routeName = dir.name;
         const routeComponent = dir.name.charAt(0).toUpperCase() + dir.name.slice(1);
         routes.push(
