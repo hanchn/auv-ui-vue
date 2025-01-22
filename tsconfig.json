@@ -11,6 +11,7 @@
     "lib": ["ESNext", "DOM"],        // 包括 import.meta 的类型支持
     "esModuleInterop": true,         // 兼容 CommonJS 和 ESM
     "resolveJsonModule": true,       // 支持 JSON 模块
-    "strict": true                   // 启用严格模式
+    "strict": true,                   // 启用严格模式
+    "types": ["vite/client"]
   }
 }
